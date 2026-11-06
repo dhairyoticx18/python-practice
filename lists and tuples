@@ -1,0 +1,57 @@
+#lists in python==>
+#A built in data that stores set of values.
+#itt can store elements of different types(intigers, strings, floats, etc.)
+
+marks= [90, 80, 70, 60, 50] #marks[0], marks[1], marks[2], marks[3], marks[4]
+print(marks[0]) 
+print(type(marks)) #list is a data type in python.
+print(len(marks))
+
+student = ["dhairya", 99, "moradbad"]
+print(student[0]) 
+print(student[1])
+print(student[2])
+print(type(student)) #list is a data type in python.
+print(len(student))
+
+#list slicing==>
+#list[starting_index:ending_index] #ending index is not included in the slice.
+
+marks= [90, 80, 70, 60, 50]
+print(marks[1:4]) #
+print(marks[:3]) #same as marks[0:3]
+print(marks[2:]) #same as marks[2:5]
+print(marks[-3:-1]) #same as marks[2:4]
+
+#list methods==>
+list1= [1, 2, 3, 4, 5]
+list1.append(46) #adds an element at the end of the list.
+print(list1)
+
+list2= [4, 2, 9, 3, 0]
+list2.sort()
+print(list2) #sorts the list in ascending order.
+
+#list.sort(reverse=True) #sorts the list in descending order.
+#list.reverse() #reverses the order of the list.
+#list.insert(idl,el) #inserts an element at the specified index.
+
+x= input("enter a name: ")
+y= int(input("enter a number: "))
+z= input("enter adress : ")
+student= [x, y, z]
+print(student)
+
+#list.remove(1) #removes the first occurence of the element 1 from the list.
+#list.pop(index) #removes the element at the specified index and returns it.
+
+
+
+
+#tuples in python==>
+#a built in data type that let us create immutable sequences of values.
+
+tup= (1, 2, 3, 4, 5) #tup[0], tup[1], tup[2], tup[3], tup[4]
+print(tup[0])
+print(type(tup)) #tuple is a data type in python.
+print(len(tup))
