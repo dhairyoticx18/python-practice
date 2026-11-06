@@ -1,0 +1,20 @@
+#dictioniaries in python==>
+#dictionaireies are used to store data values in key:values pairs .
+#they are unordered, mutable(changable), and dont allow duplicate keys.
+
+dict= {
+    "name" : "dhairya vishnoi "
+}
+print(dict["name"])
+#dict["key"]= "values" #to assign or add new.
+
+
+#NESTED dictionaries==>
+#student= {
+#   "name" : "dhairya"
+#   "score": {
+#         "chem": 98,
+#          "phy": 93
+#           "maths": 100
+#}
+#}
