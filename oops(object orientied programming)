@@ -1,0 +1,214 @@
+#oops in python===>>
+#to map with real world scenarios, we started using objects in a code.this is called a object oriented programmming.
+
+
+#class and object in python==>
+#class is a blueprint for creating objects.
+#creating  a class.
+
+#class student:
+ #name = "karan kumar"
+
+#creating a object(instance)
+
+#s1=student()
+#print(s1.name)
+
+#class and instance attributes===>
+#class.attr
+#obj.attr
+
+
+#__init__ function==>
+#constructor==>
+#all classes have a function called __init__(), which is always executed when the object is being initiated.
+
+
+#creating class                                                     #creating object
+#class student:
+#def __init__(self, fullname):                                      s1 = student("karan")
+#self.name = fullname                                               print(s1.name)
+
+#"the self parameter is a refrence to the cureent instance of the class, and is used to access variables that belongs to the class.
+
+#METHODS==>>>
+#methods are functions that belongs to objects.
+
+#creating a class
+
+#class student:                                                     #creating a object
+#def __init__(self,fullname):                                       s1= student("karan")
+#self.name = full name                                              s1.hello()
+
+#def hello(self):
+#print("hello, self.name)
+
+#static methods==>
+#methods that dont use the self parameter (work at class level).
+
+#class student:
+#   @staticmethod   #decorator 
+    #def college():
+            #print("ABC college")
+
+#deocrates allow us tp wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
+
+#important==>
+
+#abstraction==>
+#hiding the implementation deatil of a class and only showing the eseential features to the users.
+
+##encapsulation==>
+#wrapping data and functions into a single unit(objects).
+
+
+class Student:
+    name = "dhairya vishnoi"
+    marks= 100
+    age= 18
+    friend = "hrishubh, devesh "
+s1= Student()
+print(s1.name)
+
+s2= Student()
+print(s2.name)
+
+s3 = Student()
+print(s3.name)
+print(type(Student.name))
+
+s4= Student()
+print(s4.friend)
+
+s5= Student()
+print(s5.age)
+
+s6= Student()
+print(s6.marks)
+
+
+
+
+class car:
+    colour = "blue"
+    brand = "BMW"
+car1= car()
+print(car1.colour) 
+print(car1.brand)   
+
+car2= car()
+print(car2.brand)
+
+class student:
+    name = "dhairya vishnoi"
+
+    def __init__(self, fullname):
+        self.name = fullname
+        print(self)
+        print("adding a new student in a database.")
+
+s1 = student("dveesh kashyap")
+print(s1.name)
+print(s1)
+
+s2 = student("hrishubh yadav")
+print(s2.name)
+print(s2)
+
+class student():
+    college_name= "tmu teerthanker mahaveer college " #class attributes 
+
+    def __init__ (self, name, marks, rollno):       #parametrised constructor.
+        self.name = name
+        self.marks= marks           #objects attributes.
+        self.rollno = rollno
+        print(self)
+        print("greetings boss !!")
+        print("adding a new student in the database.")
+
+        def welcome(self):
+            print("welcome student")
+
+s1 = student("dhairya vishnoi ", 100, 26257920)        
+print(s1.name, s1.marks, s1.rollno) 
+
+s2 = student("hrishubh yadav", 10, 2657920)
+print(s2.name, s2.marks, s2.rollno)
+
+s3= student("devesh kashyap", 1, 2657920)
+print(s3.name, s3.marks, s3.rollno)
+
+print(s3.college_name)
+print(s2.college_name)
+
+print(student.college_name)
+#default constructors when only self parmeter is given in the __int__step.
+#jab bhi object attribute ya class attribute ki same value hoti ha hamesha object attribute ko higher prefrence milti h .
+
+
+class student():
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    @staticmethod     #decorator ( iske bina eror ayega agar run karoge toh)
+    def hello():        #agar kisi method mai self ki jarurt nahi hai yha hame nahi lagana hai toh ham static method ka use karte ha jisse hamara funcction bina self ke run hojata hai)
+        print("hello boss")
+
+    def get_avg (self):
+        sum=0
+        for val in self.marks: 
+            sum += val 
+            print("hi", self.name, "your avg score is :", sum/3)
+
+s1 = student("dhairya vishnoi", [98,97,99])
+s1.get_avg()
+s1.hello()
+
+
+class car:
+    def __init__(self):
+        self.acc = False
+        self.brake = False
+        self.clutch = False 
+        self.race = True 
+
+    def start(self):
+        self.clutch = True 
+        self.acc = True 
+        print("car started")
+
+car1 = car()
+car1.start()
+
+
+
+class account:
+    def __init__(self, balance , accountno):
+        self.balance = balance 
+        self.accountno = accountno
+        print("greetings boss ")
+
+        #debit method!
+    def debit(self, amount):
+        self.balance =- amount
+        print("RS", amount, "was debited")    
+        print("total balance =", self.get_balance())
+
+
+    #credit method
+    def credit(self, amount2):
+        self.balance += amount2 
+        print("rs", amount2 , "was credited ")
+        print("total balance = ", self.get_balance())
+
+    def get_balance(self):
+        return self.balance 
+
+acc1= account(1000000, 26373819238)
+acc1.debit(1000)
+acc1.credit(1000000) 
+
+acc2 = account(199999999, 2838938937934)
+acc2.debit(1923930)
+acc2.credit(7823784783872)
