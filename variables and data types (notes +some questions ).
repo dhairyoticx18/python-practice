@@ -1,1 +1,123 @@
+#code----> tanslator(compiler/interepretor)-----> code 
 
+#what is python?
+#python is simple and easy 
+# free and open source 
+#high level programming language
+#interpreted language
+#developed by guido van rossum in 1991
+#portable language
+
+#our first python program
+print("hello world")
+
+#python character set 
+#letters - A to Z, a to z
+#digits - 0 to 9
+#special symbols - +-*/=(){}[];:'",.<>?@#$%^&|~`_
+#white space - space, tab, newline
+#other characters - \n, \t, \r, \b, \f, \v python can process all ascii and unicode characters as part of data or literals.
+
+
+
+
+#vaariables in python=>
+name = "dhairya"
+age =16
+price = 25.99
+
+print(name)
+print(age)
+print(price)    
+print(type(name))
+print(type(age))        
+print(type(price))
+
+#rules for naming identifiers in python=>
+#1. idenifiers canbe a combination of uppercase and lowercase letters, digits and underscore(..).
+#2. An identifiers can not start with a digit. so while variable_1 is valid but 1_variable is not valid.
+#3. we can not use special symbols like @, #, $, %, etc in identifiers.
+#4. we can not use reserved keywords as identifiers. for example, if, else, while, for, etc are reserved keywords in python and can not be used as variable names.
+#5. identifiers can be of any length.
+
+
+#data types in python=>
+#1. int - integer data type, used to represent whole numbers without a fractional part. for example, 0, 1, -5, 100, etc.
+#2. float - floating point data type, used to represent numbers with a fractional part. for example, 3.14, -0.5, 2.0, etc.
+#3. str - string data type, used to represent a sequence of characters. for example "hello", 'world', "python", etc.
+#4. bool - boolean data type, used to represent truth values. it can have only two values: True and False.      
+#5. list - list data type, used to represent a collection of items. it is ordered and mutable. for example, [1, 2, 3], ["apple", "banana", "cherry"], etc.
+#6. tuple - tuple data type, used to represent a collection of items. it is ordered and immutable. for example, (1, 2, 3), ("apple", "banana", "cherry"), etc.
+#7. dict - dictionary data type, used to represent a collection of key-value pairs. it is unordered and mutable. for example, {"name": "dhairya", "age": 16, "price": 25.99}, etc.
+#8. set - set data type, used to represent a collection of unique items. it is unordered and mutable. for example, {1, 2, 3}, {"apple", "banana", "cherry"}, etc.
+#9. None - None data type, used to represent the absence of a value. it is a special constant in python. for example, None, etc.
+
+#keywords in python=>
+#keywords are reserved words in python that have a special meaning and can not be used as identifiers. for example, if, else, while, for, etc are reserved keywords in python. there are 35 keywords in python 3.9. you can check the list of keywords in python by using the keyword module.
+
+
+a= int(input("enter a number: "))
+b= int(input("enter another number: "))
+sum = a+b 
+print(sum)
+
+
+#comments in python=>
+#this is a single line comment
+
+"""
+#this is a multi line comment"""
+
+#types of operators in python=>
+#1. arithmetic operators - +, -, *, /, %, //, **
+#2. assignment operators - =, +=, -=, *=, /=, %=, //=, **=
+#3.relational/  comparison operators - ==, !=, >, <, >=, <=         
+#4. logical operators - and, or, not
+#5. bitwise operators - &, |, ^, ~, <<, >>
+
+#type coversions in python=>
+
+a,b = 1,2.0 #intigers and float can be added but not string and intigers or float. so we need to convert the string to intiger or float before adding them. we can use the int() or float() function to convert the string to intiger or float. for example, if we want to add the string "3" and the intiger 4, we can convert the string "3" to intiger 3 using the int() function and then add them. like this:
+sum = a+b
+print(sum)
+print(type(sum))
+
+#error 
+#a,b = 1,"2"
+#sum = a+b
+#print(sum)  #type error
+
+#type casting==>
+a,b = 1,"2"
+c= int(b) 
+sum = a+c#we can convert the string "2" to intiger 2 using the int() function and then add them. like this:
+print(sum)
+
+#int(y)= it converts into an intiger.
+#float(y)= it converts into a float.
+#str(y)= it converts into a string.
+#bool(y)= it converts into a boolean value. it returns True if the value is truthy and False if the value is falsy. for example, bool(0) returns False, bool(1) returns True, bool("") returns False, bool("hello") returns True, etc.
+#tuple(y)= it converts into a tuple.
+#list(y)= it converts into a list.
+#set(y)= it converts into a set.
+#dict(y)= it converts into a dictionary.
+
+
+#input and output in python=>
+#input() statement is used to accept values(using keywords) from user.
+
+#input() #result for input() is always a string.
+#int(input()) #int
+#float(input()) #float
+#str(input()) #string
+
+
+x= int(input("enter a number: "))
+y= int(input("enter another number: "))
+sum = x+y
+print(sum)
+
+
+a= int(input("enter the side of a square: "))
+area = a*a
+print("the area of the square is:", area)
