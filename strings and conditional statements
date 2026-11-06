@@ -1,0 +1,44 @@
+#strings is data types that stores a sequence of characters. it is a collection of characters enclosed in single quotes, double quotes or triple quotes. for example, "hello", 'world', """python""", etc.
+
+#basic operations on strings=>
+#1. concatenation - it is the process of joining two or more strings together. we can use the + operator to concatenate strings. for example, "hello" + " " + "world" will give us "hello world".
+ # "hello" + "world" will give us "helloworld".
+#2. length - it is the number of characters in a string. we can use the len() function to get the length of a string. for example, len("hello") will give us 5.
+#len(str)
+
+#indexing ==>
+#APNA_COLLEGE
+#012345678910,11
+
+#str= "apna_college"
+#str[0] is "a" , str[1] is "p" , str[2] is "n" , str[3] is "a" , str[4] is "_" , str[5] is "c" , str[6] is "o" , str[7] is "l" , str[8] is "l" , str[9] is "e" , str[10] is "g" , str[11] is "e"
+#str[0]="b" is not allowed because strings are immutable in python. we can not change the value of a string after it is created. we can only create a new string by concatenating the old string with the new value. for example, if we want to change the first character of the string "apna_college" to "b", we can create a new string by concatenating "b" with the rest of the string. like this:
+
+#slicing==>
+#accesing parts of a string.
+#str[starting_index:ending_index] #ending index is not included in the slice.
+#str= "apnacollege"
+#str[1:4] is "pna"
+#str[ :4] is same as str[0:4] is "apna"
+#str[4: ] is same as str[4:11] is "college"
+
+#negative indexing==>
+#APPLE ==>
+-5-4-3-2-1
+#str= "apple"
+#str[-3:-1] is "pl"
+
+#string functions==>
+#str = "i am a coder and progrrammer."
+#str.endswith("er.") #rturns true if string with substrings.
+#str.capiatlize() #capitalizes 1st char.
+#str.replace(old,new) #replaces all occurences of old with new.
+#str.find(word) #returns 1st index of the 1st occurence.
+#str.count(word) #returns the number of occurences of the word in the string.
+
+x= input("enter your name :")
+print("hello " + x)
+
+x= input("enter a name: ")
+y= len(x)
+print(y)
