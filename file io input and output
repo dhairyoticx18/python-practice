@@ -1,0 +1,50 @@
+#file I/O in python==>
+#python can be used to perform operations on a file.(read and write data).
+
+#types of all files.
+#1. Text files : .txt, .docx, .log etc.
+#2. Binary files : mp4, .mov, .png, .jpeg etc.
+
+#open, read and close file==>
+#we have to open a file before reading or writing.
+#f= open("file_name", "mode")
+#file_name= sample.txt or demo.docx
+#modde = read or write.
+
+#data = f.read()
+#f.close()
+
+#"r"= open for reading (defaault)
+#"w"= open for writing,truncating the file first.
+#"x"= cerate a new file and open it for writing.
+#"a"= open for writing, appending to the end of the file if it is exists.
+#"b"= binary mode.
+#"t"= text mode(default)
+#"+"= open a desk file for updating(reading and writing.)
+
+
+#reading a file==>
+#data=f.read()  #reads entire file.
+#data=f.readline() #reads one line at a time.
+
+
+#writing to a file==>
+#f= open("demo.txt", "w")
+#f.write("this is a new line") #overwrites the entire line.
+
+#f= open("demo.txt", "a")
+#f.write("this is a new line") #adds to the filee.
+
+
+#with synatx==>
+#with open("demo.txt", "a") as f:
+##data= f.read
+
+
+
+#deleting a file==>
+#using the os module
+#module(like a code library) is a file written by another programmer that generally has a function we can use.
+
+#import os
+#os.remove(filename)
