@@ -1,0 +1,50 @@
+#loops in python====>
+#loops are used to repeat instructions.
+
+#while loops===>
+    #while condtion:
+        #some work
+
+i = 1
+while i < 101:
+    print(i)
+    i += 1
+
+
+#break and continue===>
+#break : used to terminate the loop when encountered.
+#continue: terminates execution in the cureent iteration and continues execution of the loop with the next iteration.
+
+
+#loops in python==>
+#loops are used for sequential traversal. for traversing list, strings, tuples etc.
+
+#for loops
+#for elements in list:
+#       #some work
+
+#for loop with else 
+#for elements in list:
+#       #some work
+
+#else:
+    #work when loops ends.
+
+list= [1, 2, 3, 4]
+
+for el in list:
+    print(el)
+else: 
+    print("end")
+
+
+#range:
+# range functions returns a sequence of numbers, starting from 0 by default, and increments by 1(by default), and stops before a specified number.
+# range(start?, stop, step?)    
+
+for el in range(1,5):
+    print(el)
+for el in range(1,5):
+    print(el)
+for el in range(1,5,2):
+    print(el)
