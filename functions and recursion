@@ -1,0 +1,43 @@
+#functions in python===>
+#def function name(param1,param2): #function definition.
+#some work
+#returns value.
+
+
+#function_name(arg1,arg2): #function call
+
+def func(a,b):
+    sum=a+b
+    return sum
+
+print(func(2,3))
+
+#functions in pythons==>
+#built in functions==>                                         #user defined functions==>
+#1. print()
+#2. len()
+#3. type()
+#4. range()
+
+
+#default parameters==>
+#assigning a default value to parameter, which is used when no argument is passed
+
+
+
+#recursion=>
+#when function call itselfs repeatedly.
+
+#prints n to 1 backwards.
+def show(n):
+    if(n==0):   #base case 
+        return
+    print(n)
+    show(n-1)
+
+    #returns n!
+    def fact(N):
+        if(N==0 or N==1):
+            return 1
+        else:
+            return n * fact(n-1)
